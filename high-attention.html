@@ -1,45 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <title>Коти, яким потрібно багато уваги</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-body">
 
     <!-- Верхній колонтитул -->
-    <div id="header">
+    <div id="header" class="header">
 
-        <h1>Коти, яким потрібно багато уваги</h1>
+        <h1 class="header-title">
+            Коти, яким потрібно багато уваги
+        </h1>
 
-        <p>
+        <p class="header-description">
             Породи, які потребують активної взаємодії та спілкування.
         </p>
 
     </div>
 
     <!-- Основна область сторінки -->
-    <div id="page">
+    <div id="page" class="page-layout">
 
         <!-- Бокова колонка -->
-        <div id="sidebar">
+        <div id="sidebar" class="sidebar">
 
-            <h2>Навігація</h2>
+            <h2 class="sidebar-title">Навігація</h2>
 
-            <ul>
-                <li>
-                    <a href="index.html">Головна</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Головна</a>
                 </li>
 
-                <li>
-                    <a href="high-attention.html">
+                <li class="nav-item">
+                    <a class="nav-link" href="high-attention.html">
                         Багато уваги
                     </a>
                 </li>
 
-                <li>
-                    <a href="low-attention.html">
+                <li class="nav-item">
+                    <a class="nav-link" href="low-attention.html">
                         Мало уваги
                     </a>
                 </li>
@@ -48,69 +52,72 @@
         </div>
 
         <!-- Основний вміст -->
-        <div id="content">
+        <div id="content" class="content">
 
-            <h2>Сіамська кішка</h2>
+            <h2 class="cat-title">Сіамська кішка</h2>
 
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siamese_cat.jpg"
+            <img class="cat-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Siamese_cat.jpg"
                  alt="Сіамська кішка"
                  width="400">
 
-            <p>
+            <p class="cat-description">
                 Сіамські коти дуже товариські та активні.
                 Вони люблять взаємодіяти з людиною, гратися
                 та привертати увагу господаря.
             </p>
 
-            <h3>Основні характеристики:</h3>
+            <h3 class="characteristics-title">Основні характеристики:</h3>
 
-            <ul>
+            <ul class="characteristics-list">
                 <li>Шерсть: коротка, гладка</li>
                 <li>Активність: висока</li>
                 <li>Потреба в увазі: висока</li>
                 <li>Характер: товариський, допитливий</li>
             </ul>
 
-            <hr>
+            <hr class="cat-divider">
 
-            <h2>Бенгальська кішка</h2>
+            <h2 class="cat-title">Бенгальська кішка</h2>
 
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bengal_cat.JPG"
+            <img class="cat-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Bengal_cat.JPG"
                  alt="Бенгальська кішка"
                  width="400">
 
-            <p>
+            <p class="cat-description">
                 Бенгальські коти дуже енергійні та допитливі.
                 Їм потрібно багато рухатися, гратися та
                 досліджувати навколишнє середовище.
             </p>
 
-            <h3>Основні характеристики:</h3>
+            <h3 class="characteristics-title">Основні характеристики:</h3>
 
-            <ul>
+            <ul class="characteristics-list">
                 <li>Шерсть: коротка, гладка</li>
                 <li>Активність: дуже висока</li>
                 <li>Потреба в увазі: висока</li>
                 <li>Характер: активний, грайливий</li>
             </ul>
 
-            <hr>
+            <hr class="cat-divider">
 
-            <h2>Мейн-кун</h2>
+            <h2 class="cat-title">Мейн-кун</h2>
 
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maine_coon_cat.jpg"
+            <img class="cat-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Maine_coon_cat.jpg"
                  alt="Мейн-кун"
                  width="400">
 
-            <p>
+            <p class="cat-description">
                 Мейн-куни є великими та соціальними котами.
                 Вони люблять взаємодію з власником і можуть
                 потребувати регулярних ігор та активності.
             </p>
 
-            <h3>Основні характеристики:</h3>
+            <h3 class="characteristics-title">Основні характеристики:</h3>
 
-            <ul>
+            <ul class="characteristics-list">
                 <li>Шерсть: довга, густа</li>
                 <li>Активність: середня / висока</li>
                 <li>Потреба в увазі: середня / висока</li>
@@ -122,11 +129,11 @@
     </div>
 
     <!-- Нижній колонтитул -->
-    <div id="footer">
+    <div id="footer" class="footer">
 
-        <hr>
+        <hr class="footer-divider">
 
-        <p>
+        <p class="footer-text">
             Сайт про породи котів &copy; 2026
         </p>
 

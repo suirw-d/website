@@ -1,45 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <title>Коти, яким потрібно мало уваги</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-body">
 
     <!-- Верхній колонтитул -->
-    <div id="header">
+    <div id="header" class="header">
 
-        <h1>Коти, яким потрібно мало уваги</h1>
+        <h1 class="header-title">
+            Коти, яким потрібно мало уваги
+        </h1>
 
-        <p>
+        <p class="header-description">
             Спокійні та більш самостійні породи котів.
         </p>
 
     </div>
 
     <!-- Основна область сторінки -->
-    <div id="page">
+    <div id="page" class="page-layout">
 
         <!-- Бокова колонка -->
-        <div id="sidebar">
+        <div id="sidebar" class="sidebar">
 
-            <h2>Навігація</h2>
+            <h2 class="sidebar-title">Навігація</h2>
 
-            <ul>
-                <li>
-                    <a href="index.html">Головна</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Головна
+                    </a>
                 </li>
 
-                <li>
-                    <a href="high-attention.html">
+                <li class="nav-item">
+                    <a class="nav-link" href="high-attention.html">
                         Багато уваги
                     </a>
                 </li>
 
-                <li>
-                    <a href="low-attention.html">
+                <li class="nav-item">
+                    <a class="nav-link" href="low-attention.html">
                         Мало уваги
                     </a>
                 </li>
@@ -48,46 +54,52 @@
         </div>
 
         <!-- Основний вміст -->
-        <div id="content">
+        <div id="content" class="content">
 
-            <h2>Британська короткошерста</h2>
+            <h2 class="cat-title">Британська короткошерста</h2>
 
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/British_Shorthair_cat.jpg"
+            <img class="cat-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/British_Shorthair_cat.jpg"
                  alt="Британська короткошерста кішка"
                  width="400">
 
-            <p>
+            <p class="cat-description">
                 Британські короткошерсті коти відомі своїм
                 спокійним характером. Вони досить самостійні
                 та не потребують постійної уваги.
             </p>
 
-            <h3>Основні характеристики:</h3>
+            <h3 class="characteristics-title">
+                Основні характеристики:
+            </h3>
 
-            <ul>
+            <ul class="characteristics-list">
                 <li>Шерсть: коротка, густа</li>
                 <li>Активність: низька / середня</li>
                 <li>Потреба в увазі: низька / середня</li>
                 <li>Характер: спокійний, незалежний</li>
             </ul>
 
-            <hr>
+            <hr class="cat-divider">
 
-            <h2>Перська кішка</h2>
+            <h2 class="cat-title">Перська кішка</h2>
 
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Persian_Cat_01.jpg"
+            <img class="cat-image"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Persian_Cat_01.jpg"
                  alt="Перська кішка"
                  width="400">
 
-            <p>
+            <p class="cat-description">
                 Перські коти зазвичай спокійні та не потребують
                 великої кількості фізичної активності.
                 Вони можуть багато часу проводити відпочиваючи.
             </p>
 
-            <h3>Основні характеристики:</h3>
+            <h3 class="characteristics-title">
+                Основні характеристики:
+            </h3>
 
-            <ul>
+            <ul class="characteristics-list">
                 <li>Шерсть: довга, густа</li>
                 <li>Активність: низька</li>
                 <li>Потреба в увазі: низька / середня</li>
@@ -99,11 +111,11 @@
     </div>
 
     <!-- Нижній колонтитул -->
-    <div id="footer">
+    <div id="footer" class="footer">
 
-        <hr>
+        <hr class="footer-divider">
 
-        <p>
+        <p class="footer-text">
             Сайт про породи котів &copy; 2026
         </p>
 

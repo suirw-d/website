@@ -1,46 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <title>Породи котів</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-body">
 
     <!-- Верхній колонтитул -->
-    <div id="header">
+    <div id="header" class="header">
 
-        <h1>Породи котів</h1>
+        <h1 class="header-title">Породи котів</h1>
 
-        <p>
+        <p class="header-description">
             Інформаційний сайт про популярні породи домашніх котів.
         </p>
 
     </div>
 
     <!-- Основна область сторінки -->
-    <div id="page">
+    <div id="page" class="page-layout">
 
         <!-- Бокова колонка -->
-        <div id="sidebar">
+        <div id="sidebar" class="sidebar">
 
-            <h2>Навігація</h2>
+            <h2 class="sidebar-title">Навігація</h2>
 
-            <ul>
-                <li>
-                    <a href="index.html">Головна</a>
-                </li>
-
-                <li>
-                    <a href="high-attention.html">
-                        Коти, яким потрібно багато уваги
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Головна
                     </a>
                 </li>
 
-                <li>
-                    <a href="low-attention.html">
-                        Коти, яким потрібно мало уваги
+                <li class="nav-item">
+                    <a class="nav-link" href="high-attention.html">
+                        Багато уваги
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="low-attention.html">
+                        Мало уваги
                     </a>
                 </li>
             </ul>
@@ -48,24 +52,24 @@
         </div>
 
         <!-- Основний вміст -->
-        <div id="content">
+        <div id="content" class="content">
 
-            <h2>Про сайт</h2>
+            <h2 class="cat-title">Про сайт</h2>
 
-            <p>
+            <p class="cat-description">
                 На цьому сайті можна дізнатися про різні породи котів,
                 їхній характер, рівень активності та потребу в увазі.
             </p>
 
-            <p>
+            <p class="cat-description">
                 Інформація поділена на дві основні категорії:
                 коти, яким потрібно багато уваги, та коти,
                 які є більш самостійними.
             </p>
 
-            <h2>Оберіть категорію</h2>
+            <h2 class="cat-title">Оберіть категорію</h2>
 
-            <p>
+            <p class="cat-description">
                 Скористайтеся меню зліва, щоб перейти до потрібної
                 сторінки та дізнатися більше про породи котів.
             </p>
@@ -75,11 +79,11 @@
     </div>
 
     <!-- Нижній колонтитул -->
-    <div id="footer">
+    <div id="footer" class="footer">
 
-        <hr>
+        <hr class="footer-divider">
 
-        <p>
+        <p class="footer-text">
             Сайт про породи котів &copy; 2026
         </p>
 
