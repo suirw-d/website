@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Анімація sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar-animation.css">
+</head>
+
+<body class="page-body">
+
+    <!-- Верхній колонтитул -->
+    <div id="header" class="header">
+
+        <h1 class="header-title">Анімація sidebar</h1>
+
+        <p class="header-description">
+            Сторінка з JavaScript-анімацією бокової колонки.
+        </p>
+
+    </div>
+
+    <!-- Основна область сторінки -->
+    <div id="page" class="page-layout">
+
+        <!-- Бокова колонка -->
+        <div id="sidebar" class="sidebar">
+
+            <h2 class="sidebar-title">Навігація</h2>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Головна
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="high-attention.html">
+                        Багато уваги
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="low-attention.html">
+                        Мало уваги
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="animation.html">
+                        Анімація sidebar
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Основний вміст -->
+        <div id="content" class="content">
+
+            <h2 class="cat-title">Як це працює</h2>
+
+            <p class="cat-description">
+                Під час завантаження сторінки бокова колонка плавно
+                виїжджає зліва, а пункти меню з'являються по черзі.
+            </p>
+
+            <p class="cat-description">
+                Натисніть кнопку нижче, щоб згорнути або розгорнути
+                sidebar. Також посилання в меню плавно зсуваються
+                при наведенні курсора.
+            </p>
+
+            <button id="sidebar-toggle" class="sidebar-toggle"
+                    type="button" aria-expanded="true">
+                Сховати sidebar
+            </button>
+
+            <hr class="cat-divider">
+
+            <h3 class="characteristics-title">Що використано:</h3>
+
+            <ul class="characteristics-list">
+                <li>JavaScript: додавання класів, setTimeout, обробник click</li>
+                <li>CSS: transition для transform, opacity, width</li>
+                <li>Адаптація: на вузьких екранах sidebar згортається по висоті</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Нижній колонтитул -->
+    <div id="footer" class="footer">
+
+        <hr class="footer-divider">
+
+        <p class="footer-text">
+            Сайт про породи котів &copy; 2026
+        </p>
+
+    </div>
+
+    <script src="sidebar-animation.js"></script>
+
+</body>
+
+</html>

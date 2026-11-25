@@ -1,0 +1,96 @@
+/* Стилі анімації sidebar (використовуються лише на сторінці animation.html) */
+
+/* Початковий стан: sidebar "виїжджає" зліва */
+.sidebar-animated {
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-60px);
+    transition:
+        transform 0.7s ease,
+        opacity 0.7s ease,
+        width 0.5s ease,
+        padding 0.5s ease,
+        margin 0.5s ease,
+        max-height 0.5s ease;
+}
+
+.sidebar-animated.sidebar-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Згорнутий стан */
+.sidebar-animated.sidebar-collapsed {
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: -25px; /* компенсує gap між колонками */
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+/* Пункти меню з'являються по черзі */
+.sidebar-animated .nav-item {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sidebar-animated .nav-item.item-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Плавне зміщення посилання при наведенні */
+.sidebar-animated .nav-link {
+    transition: background-color 0.25s ease, padding-left 0.25s ease;
+}
+
+.sidebar-animated .nav-link:hover {
+    padding-left: 16px;
+}
+
+/* Кнопка згортання/розгортання */
+.sidebar-toggle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #35495e;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.sidebar-toggle:hover {
+    background-color: #1d3557;
+}
+
+.sidebar-toggle:active {
+    transform: scale(0.96);
+}
+
+/* Вузькі екрани: sidebar згортається по висоті */
+@media (max-width: 700px) {
+    .sidebar-animated {
+        max-height: 400px;
+        transform: translateY(-30px);
+    }
+
+    .sidebar-animated.sidebar-visible {
+        transform: translateY(0);
+    }
+
+    .sidebar-animated.sidebar-collapsed {
+        width: 100%;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-bottom: -25px;
+        transform: translateY(-30px);
+    }
+}
